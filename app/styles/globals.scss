@@ -1,0 +1,41 @@
+@use "colors" as *;
+@use "color-use-cases";
+@use "typography" as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    @include colors;
+
+    --app-header-height: 4.9rem;
+    --app-menu-width: 28rem;
+  }
+
+  body {
+    @apply w-full bg-grey-10 text-base text-grey-900 dark:bg-grey-900 dark:text-grey-100;
+  }
+}
+
+@layer utilities {
+  .app-border {
+    @apply border-grey-990/20 dark:border-grey-10/20;
+  }
+
+  .app-container {
+    @apply mx-auto w-full max-w-screen-2xl;
+  }
+
+  .app-container-padding {
+    @apply mx-auto w-full max-w-screen-2xl px-4 lg:px-8;
+  }
+
+  .typo-label {
+    @apply mb-1 text-sm text-grey-990/50 dark:text-grey-10/50;
+  }
+}
+
+@layer components {
+}

@@ -1,0 +1,10 @@
+@use "color-tools" as *;
+
+@include generateThemeVariables(
+  (
+    // app-wide
+    app-border: (light: var(--grey-200), dark: var(--grey-100)),
+    // text
+    text-label: (light: var(--raisin-100), dark: var(--grey-500))
+  )
+);

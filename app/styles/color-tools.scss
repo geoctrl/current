@@ -1,0 +1,51 @@
+@use "sass:list";
+@use "sass:string";
+@use "sass:map";
+
+@mixin generateThemeVariables($use-case) {
+  $returnMap: ();
+  @each $name, $colorMap in $use-case {
+    @if type-of($colorMap) == map {
+      @each $theme, $color in $colorMap {
+        $themeList: map.get($returnMap, $theme);
+        @if $themeList == null {
+          $themeList: ();
+        }
+        $themeList: list.append($themeList, (#{--#{$name}}, $color));
+        $returnMap: map.set($returnMap, $theme, $themeList);
+      }
+    } @else {
+      @each $theme in ("light", "dark") {
+        $themeList: map.get($returnMap, $theme);
+        @if $themeList == null {
+          $themeList: ();
+        }
+        $themeList: list.append($themeList, (#{--#{$name}}, $colorMap));
+        $returnMap: map.set($returnMap, $theme, $themeList);
+      }
+    }
+  }
+  @each $themeName, $theme in $returnMap {
+    :root.#{$themeName} {
+      @each $name, $color in $theme {
+        #{$name}: #{$color};
+      }
+    }
+  }
+}
+
+@mixin generateVariables($values) {
+  :root {
+    @each $name, $value in $values {
+      #{--#{$name}}: #{$value};
+    }
+  }
+}
+
+@function buildRgb($color) {
+  @return #{#{red($color)}, #{green($color)}, primary($color)};
+}
+
+@function v($var) {
+  @return #{var(--#{$var})};
+}

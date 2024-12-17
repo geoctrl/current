@@ -1,0 +1,72 @@
+.docs {
+  @apply prose dark:prose-invert;
+  width: auto;
+  max-width: 100%;
+  padding-bottom: 12rem;
+
+  &:where(h2, h3, h4):not(:where([class~="not-prose"] *)) {
+    scroll-padding-top: 200rem;
+  }
+
+  pre.shiki {
+    @apply border app-border;
+  }
+
+  pre code {
+    all: unset;
+  }
+
+  pre.simple {
+    @apply rounded-[.2em] bg-primary-500/10 font-normal text-grey-900 dark:bg-primary-500/10 dark:text-grey-10;
+  }
+
+  code:not(pre code) {
+    @apply rounded-[.2em] bg-primary-500/20 px-[.2em] py-[.1em] font-normal text-grey-900 dark:bg-primary-500/20 dark:text-grey-10;
+  }
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/app/assets/fonts/InterVariable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/app/assets/fonts/InterVariable-Italic.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Hack";
+  src: url("/app/assets/fonts/hack-bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Hack";
+  src: url("/app/assets/fonts/hack-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Hack";
+  src: url("/app/assets/fonts/hack-bold-italic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Hack";
+  src: url("/app/assets/fonts/hack-italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: fallback;
+}

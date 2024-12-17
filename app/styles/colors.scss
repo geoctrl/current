@@ -1,0 +1,105 @@
+@mixin colors {
+  --grey-10: #ffffff;
+  --grey-25: #fafafa;
+  --grey-50: #f4f5f6;
+  --grey-75: #efeff1;
+  --grey-100: #e9eaec;
+  --grey-150: #dbdce0;
+  --grey-200: #cccfd3;
+  --grey-250: #bec1c7;
+  --grey-300: #afb4ba;
+  --grey-350: #a1a6ae;
+  --grey-400: #9298a1;
+  --grey-450: #848b95;
+  --grey-500: #757d88;
+  --grey-550: #6a717b;
+  --grey-600: #5f656e;
+  --grey-650: #545961;
+  --grey-700: #494e55;
+  --grey-750: #3d4248;
+  --grey-800: #32363b;
+  --grey-850: #272a2e;
+  --grey-900: #1c1e21;
+  --grey-925: #151719;
+  --grey-950: #0e0f11;
+  --grey-975: #070808;
+  --grey-990: #000000;
+
+  --primary-10: #ebf6ff;
+  --primary-25: #cce9ff;
+  --primary-50: #aedcff;
+  --primary-75: #8fceff;
+  --primary-100: #70c1ff;
+  --primary-200: #54b1f7;
+  --primary-300: #38a0f0;
+  --primary-400: #1c90e8;
+  --primary-500: #007fe0;
+  --primary-600: #0071c7;
+  --primary-700: #0062ad;
+  --primary-800: #005494;
+  --primary-900: #00457a;
+  --primary-925: #003a66;
+  --primary-950: #002e52;
+  --primary-975: #00233d;
+  --primary-990: #001729;
+
+  --puce-10: #faf0f2;
+  --puce-25: #f5e1e5;
+  --puce-50: #f0d2d7;
+  --puce-75: #eac2ca;
+  --puce-100: #e5b3bc;
+  --puce-200: #dda4ae;
+  --puce-300: #d695a0;
+  --puce-400: #ce8592;
+  --puce-500: #c67685;
+  --puce-600: #be6777;
+  --puce-700: #b75869;
+  --puce-800: #af485b;
+  --puce-900: #a7394d;
+
+  --almond-10: #faf5f0;
+  --almond-25: #f6eee4;
+  --almond-50: #f3e7d9;
+  --almond-75: #efdfcd;
+  --almond-100: #ebd8c1;
+  --almond-200: #dfc9ae;
+  --almond-300: #d3ba9c;
+  --almond-400: #c7ab89;
+  --almond-500: #bc9c77;
+  --almond-600: #b08c64;
+  --almond-700: #a47d51;
+  --almond-800: #986e3f;
+  --almond-900: #8c5f2c;
+
+  --zomp-10: #f2f7f6;
+  --zomp-25: #e6efed;
+  --zomp-50: #d9e8e5;
+  --zomp-75: #cde0dc;
+  --zomp-100: #c0d8d3;
+  --zomp-200: #b2cdc7;
+  --zomp-300: #a4c2bc;
+  --zomp-400: #95b6b0;
+  --zomp-500: #87aba4;
+  --zomp-600: #79a098;
+  --zomp-700: #6b958d;
+  --zomp-800: #5c8981;
+  --zomp-900: #4e7e75;
+
+  --tropical-indigo-10: #f3f1f8;
+  --tropical-indigo-25: #e7e4f1;
+  --tropical-indigo-50: #dcd6eb;
+  --tropical-indigo-75: #d0c9e4;
+  --tropical-indigo-100: #c4bbdd;
+  --tropical-indigo-200: #b9aed6;
+  --tropical-indigo-300: #ada1cf;
+  --tropical-indigo-400: #a294c7;
+  --tropical-indigo-500: #9687c0;
+  --tropical-indigo-600: #8b79b9;
+  --tropical-indigo-700: #7f6cb2;
+  --tropical-indigo-800: #745faa;
+  --tropical-indigo-900: #6852a3;
+}
+
+// grey-900 text
+// grey-600 disabled text
+// primary-600 is "anchor links"
